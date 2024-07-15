@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "summary": "A novel set in the American South during the 1930s, dealing with the issues of racial injustice and moral growth.",
+    "publicationYear": 1960,
+    "genre": "Fiction"
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "summary": "A dystopian novel depicting a totalitarian regime and the struggle for freedom and individuality.",
+    "publicationYear": 1949,
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 3,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "summary": "A romantic novel exploring the issues of class, marriage, and morality in early 19th-century England.",
+    "publicationYear": 1813,
+    "genre": "Romance"
+  },
+  {
+    "id": 4,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "summary": "A novel set in the Jazz Age, portraying the extravagant and disillusioned lives of the wealthy elite.",
+    "publicationYear": 1925,
+    "genre": "Fiction"
+  },
+  {
+    "id": 5,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "summary": "The first book in the Harry Potter series, following the adventures of a young wizard.",
+    "publicationYear": 1997,
+    "genre": "Fantasy"
+  }
+]

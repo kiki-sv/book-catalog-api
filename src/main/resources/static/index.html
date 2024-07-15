@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Catalog</title>
+</head>
+<body>
+<h1>Book Catalog</h1>
+
+<div id="bookList">
+    <!-- Book list will be populated here -->
+    [
+    {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "summary": "A novel set in the American South during the 1930s, dealing with the issues of racial injustice and moral growth.",
+    "publicationYear": 1960,
+    "genre": "Fiction"
+    },
+    {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "summary": "A dystopian novel depicting a totalitarian regime and the struggle for freedom and individuality.",
+    "publicationYear": 1949,
+    "genre": "Science Fiction"
+    },
+    {
+    "id": 3,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "summary": "A romantic novel exploring the issues of class, marriage, and morality in early 19th-century England.",
+    "publicationYear": 1813,
+    "genre": "Romance"
+    },
+    {
+    "id": 4,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "summary": "A novel set in the Jazz Age, portraying the extravagant and disillusioned lives of the wealthy elite.",
+    "publicationYear": 1925,
+    "genre": "Fiction"
+    },
+    {
+    "id": 5,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "summary": "The first book in the Harry Potter series, following the adventures of a young wizard.",
+    "publicationYear": 1997,
+    "genre": "Fantasy"
+    }
+    ]
+
+
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('/api/books')
+            .then(response => response.json())
+            .then(data => {
+                const bookListElement = document.getElementById('bookList');
+                data.forEach(book => {
+                    const bookDiv = document.createElement('div');
+                    bookDiv.innerHTML = `
+                        <p><strong>Title:</strong> ${book.title}</p>
+                        <p><strong>Author:</strong> ${book.author}</p>
+                        <p><strong>Summary:</strong> ${book.summary}</p>
+                        <p><strong>Publication Year:</strong> ${book.publicationYear}</p>
+                        <p><strong>Genre:</strong> ${book.genre}</p>
+                        <hr>
+                    `;
+                    bookListElement.appendChild(bookDiv);
+                });
+            })
+            .catch(error => console.error('Error fetching books:', error));
+    });
+</script>
+</body>
+</html>
