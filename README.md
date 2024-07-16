@@ -26,11 +26,11 @@ This project is a RESTful API for a simple book catalog built using Java and Spr
      - Base URL: **http://localhost:8080**
      - Swagger UI: **http://localhost:8080/swagger-ui.html**
 
-  ## Endpoints
-  - **GET /books:** Retrieve a list of all books.
-  - **GET /books{id}:** Retrieve details of a specific book.
-  - **GET /books/search/title:** Retrieve details of book based on title.
-  - **GET /books/search/author:** Retrieve details of book based on author.
-  - **POST /books:** Add a new book.
-  - **PUT /books/update/{id}:** Edit an existing book.
-  - **DELETE books/delete/{id}:** Delete an existing book.
+## Endpoints
+- **GET /books:** Retrieve a list of all books.
+- **GET /books{id}:** Retrieve details of a specific book.
+- **GET /books/search/title:** Retrieve details of book based on title.
+- **GET /books/search/author:** Retrieve details of book based on author.
+- **POST /books:** Add a new book.
+- **PUT /books/update/{id}:** Edit an existing book.
+- **DELETE books/delete/{id}:** Delete an existing book.
