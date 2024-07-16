@@ -17,12 +17,12 @@ This project is a RESTful API for a simple book catalog built using Java and Spr
 - **Swagger/OpenAPI**
 
 ## Setup and Usage
-- 1. **Clone the Repository**
+- **Clone the Repository**
       git clone https://github.com/kiki-sv/book-catalog-api.git
       cd book-catalog-api
-- 2. **Run the Application**
+- **Run the Application**
       ./mvnw spring-boot:run
-- 3. **Access API**
+- **Access API**
      - Base URL: **http://localhost:8080**
      - Swagger UI: **http://localhost:8080/swagger-ui.html**
 
